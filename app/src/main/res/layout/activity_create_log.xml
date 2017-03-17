@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context="londonmet.aladdin.hourstracker.CreateLog">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="4.0dp"
+        android:paddingTop="5.0dp"
+        android:paddingRight="4.0dp"
+        android:paddingBottom="1.0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/startLogText"
+            android:layout_width="0dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="0"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/endLogText"
+            android:layout_width="0dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="4.0dp"
+        android:paddingTop="5.0dp"
+        android:paddingRight="4.0dp"
+        android:paddingBottom="1.0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/startLogButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            android:text="Clock In"
+            android:layout_weight="1.0"/>
+
+        <Button
+            android:id="@+id/endLogButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:text="Clock out"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="4.0dp"
+        android:paddingTop="5.0dp"
+        android:paddingRight="4.0dp"
+        android:paddingBottom="1.0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+        android:id="@+id/dateLogButton"
+        android:text="Date"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_weight="1.0"/>
+
+        <Button
+            android:id="@+id/addLogButton"
+            android:onClick="addLog"
+            android:text="Add"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1.0"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/logList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>

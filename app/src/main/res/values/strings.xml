@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HoursTracker</string>
+
+
+    <!-- Main View -->
+    <string name="welcome_text">Welcome to Hours Tracker</string>
+    <string name="btn_createJob">Create Job</string>
+    <string name="btn_showJob">Show Jobs</string>
+
+    <!-- Create Job View -->
+    <string-array name="payment_array">
+        <item>Weekley</item>
+        <item>Four Weeks</item>
+        <item>Monthly</item>
+    </string-array>
+    <string name="title_activity_list_jobs">ListJobs</string>
+
+    <string-array name="menuItems">
+        <item>Delete</item>
+    </string-array>
+
+
+    <string name="action_settings">About</string>
+    <string name="title_activity_create_job">createJob</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_create_log">CreateLog</string>
+
+
+</resources>
